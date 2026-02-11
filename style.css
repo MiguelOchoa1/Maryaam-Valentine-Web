@@ -1,3 +1,45 @@
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+    img[src^="Pictures/"],
+    img[src="1.jpg"],
+    img[src="cat_dance.gif"],
+    img[src="cat_heart.gif"],
+    img[src="envelope.png"],
+    img[src="heart-bg.jpg"],
+    img[src="no.png"],
+    img[src="window.png"],
+    img[src="yes.png"] {
+        width: 90vw;
+        height: auto;
+        max-height: 40vh;
+    }
+
+    .letter-window {
+        width: 98vw;
+        max-width: 100vw;
+        padding: 10px 2vw 0 2vw;
+        padding-top: 80px;
+        font-size: 16px;
+    }
+
+    h1, p, .final-text {
+        font-size: 5vw;
+    }
+
+    .cat {
+        width: 40vw;
+        min-width: 100px;
+        max-width: 200px;
+    }
+
+    .btn, .yes-btn, .no-btn {
+        width: 40vw;
+        min-width: 80px;
+        max-width: 120px;
+        font-size: 4vw;
+    }
+}
+
 /* Only the image 1.jpg in the root folder gets consistent sizing */
 img[src="1.JPG"] {
     width: 100px;
