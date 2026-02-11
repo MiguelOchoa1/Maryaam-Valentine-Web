@@ -1,3 +1,21 @@
+/* Only the image 1.jpg in the root folder gets consistent sizing */
+img[src="1.JPG"] {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+/* Only images in Pictures/ directory get consistent sizing */
+img[src^="Pictures/"] {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
 /* Background images styling */
 .bg-img {
                         box-shadow: 1px 2px 50px 1px red, 0 0 48px 16px rgba(255,0,0,0.5);
