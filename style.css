@@ -1,3 +1,10 @@
+/* Ensure specific images are always in front */
+img[src="yes.png"],
+img[src="window.png"],
+img[src="no.png"] {
+    position: relative;
+    z-index: 1000 !important;
+}
 /* Responsive adjustments for mobile devices */
 @media (max-width: 600px) {
     img[src^="Pictures/"],
@@ -51,8 +58,12 @@ img[src="1.JPG"] {
 }
 /* Only images in Pictures/ directory get consistent sizing */
 img[src^="Pictures/"] {
-    width: 100px;
-    height: 100px;
+    width: 12vw;
+    height: 12vw;
+    max-width: 180px;
+    max-height: 180px;
+    min-width: 60px;
+    min-height: 60px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
