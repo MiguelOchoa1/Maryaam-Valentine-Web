@@ -15,32 +15,81 @@
     <title>Document</title>
   </head>
   <body>
+      <!-- TV Girl Audio Autoplay -->
+      <audio id="tvGirlAudio" src="TV Girl - Lovers Rock (Lyrics).mp3"></audio>
+    <!-- Small background images with title 'img' -->
+    <img src="Pictures/img7.jpeg" title="img" class="bg-img bg-img-1">
+    <img src="Pictures/img1.jpeg" title="img" class="bg-img bg-img-2">
+    <img src="Pictures/img3.jpeg" title="img" class="bg-img bg-img-3">
+    <img src="Pictures/img4.jpeg" title="img" class="bg-img bg-img-4">
+    <img src="Pictures/img5.jpeg" title="img" class="bg-img bg-img-5">
+    <img src="Pictures/img6.jpeg" title="img" class="bg-img bg-img-6">
+    <img src="Pictures/8.JPG" title="img" class="bg-img bg-img-8">
+    <img src="Pictures/1.jpg" title="img" class="bg-img bg-img-7">
+    <img src="Pictures/3.jpg" title="img" class="bg-img bg-img-9">
+    <img src="Pictures/5.jpg" title="img" class="bg-img bg-img-11">
+    <img src="Pictures/6.jpg" title="img" class="bg-img bg-img-12">
+    <img src="Pictures/7.jpg" title="img" class="bg-img bg-img-13">
+    <img src="Pictures/9.jpg" title="img" class="bg-img bg-img-15">
+    <img src="Pictures/10.PNG" title="img" class="bg-img bg-img-16">
+    <img src="Pictures/img8.JPG" title="img" class="bg-img bg-img-17">
+    <img src="Pictures/img9.JPG" title="img" class="bg-img bg-img-18">
+    <img src="Pictures/img7.jpeg" title="img" class="bg-img bg-img-1">
+    <img src="Pictures/img1.jpeg" title="img" class="bg-img bg-img-2">
+    <img src="Pictures/img3.jpeg" title="img" class="bg-img bg-img-3">
+    <img src="Pictures/img4.jpeg" title="img" class="bg-img bg-img-4">
+    <img src="Pictures/img5.jpeg" title="img" class="bg-img bg-img-5">
+    <img src="Pictures/img6.jpeg" title="img" class="bg-img bg-img-6">
+    <img src="Pictures/8.JPG" title="img" class="bg-img bg-img-8">
+    <img src="Pictures/1.jpg" title="img" class="bg-img bg-img-7">
+    <img src="Pictures/3.jpg" title="img" class="bg-img bg-img-9">
+    <img src="Pictures/5.jpg" title="img" class="bg-img bg-img-11">
+    <img src="Pictures/6.jpg" title="img" class="bg-img bg-img-12">
+    <img src="Pictures/7.jpg" title="img" class="bg-img bg-img-13">
+    <img src="Pictures/9.jpg" title="img" class="bg-img bg-img-15">
+    <img src="Pictures/10.PNG" title="img" class="bg-img bg-img-16">
+    <img src="Pictures/img8.JPG" title="img" class="bg-img bg-img-17">
+    <img src="Pictures/img9.JPG" title="img" class="bg-img bg-img-18">
+    
+    
+    
+
     <!-- Envelope Screen -->
     <div id="envelope-container">
       <img src="envelope.png" alt="Envelope" id="envelope" />
-      <p>♡ Letter for You ♡</p>
+      <p>♡ Letter for Maryaam Fatima ♡</p>
     </div>
 
     <!-- Letter Screen -->
     <div id="letter-container">
       <div class="letter-window">
-        <h1 id="letter-title">Will you be my Valentine?</h1>
+        <h1 id="letter-title">So I've been meaning to ask you...</h1>
 
         <img src="cat_heart.gif" class="cat" id="letter-cat" />
 
-        <div class="buttons" id="letter-buttons">
+        <div class="buttons" id="letter-buttons" style="display: none;">
           <img src="yes.png" class="btn yes-btn" alt="Yes" />
-
           <div class="no-wrapper">
             <img src="no.png" class="btn no-btn" alt="No" />
           </div>
         </div>
 
         <p id="final-text" class="final-text" style="display: none">
-          <strong>Valentine Date:</strong> Meow Restaurant at 7pm. Dress fancy!
+          <strong>Valentine Date:</strong> La Grande Boucherie at 8:15pm!
         </p>
       </div>
     </div>
     <script src="script.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('tvGirlAudio');
+        audio.volume = 0.7;
+        function playAudio() {
+          audio.play();
+          window.removeEventListener('click', playAudio);
+        }
+        window.addEventListener('click', playAudio);
+      });
+    </script>
   </body>
 </html>

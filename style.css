@@ -1,3 +1,40 @@
+/* Background images styling */
+.bg-img {
+                        box-shadow: 1px 2px 50px 1px red, 0 0 48px 16px rgba(255,0,0,0.5);
+                    background-color: white;
+                background-color: white;
+                opacity: 1;
+            border: 3px solid red;
+            image-rendering: pixelated;
+            /* Optional: square shape for pixel look */
+            border-radius: 0;
+        /* Removed heart-shaped clip-path */
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    /* Removed border and border-radius for default appearance */
+    /* Removed heart-shaped clip-path */
+    opacity: 0.8;
+    z-index: 1 !important;
+    pointer-events: none;
+}
+/* Only corners and sides, nothing in the middle */
+.bg-img-1 { top: 4%; left: -10;}
+.bg-img-2 { top: 5%; right: 2%; }
+.bg-img-3 { bottom: 10; left: 5%; }
+.bg-img-4 { bottom: 9; right: 5%; }
+.bg-img-5 { top: 6%; left: 3%; }
+.bg-img-6 { top: 80%; left: 3%; }
+.bg-img-7 { top: 80%; left: 45%; }
+.bg-img-8 { top: 4%; left: 60%; }
+.bg-img-9 { top: 80%; left: 30%; }
+.bg-img-11 { top: 25%; right: 10%; }
+.bg-img-12 { top: 60%; right: 10%; }
+.bg-img-13 { top: 80%; right: 1%; }
+.bg-img-15 { top: 4%; left: 30%; }
+.bg-img-16 { top: 80%; left: 60%; }
+.bg-img-17 { top: 60%; left: 11%; }
+.bg-img-18 { top: 25%; left: 11%; }
 body {
     margin: 0;
     height: 100vh;
@@ -5,6 +42,7 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("heart-bg.jpg");
+    cursor: url('heart-cursor.png'), auto;
     font-family: "Pixelify Sans", sans-serif;
 }
 
@@ -65,7 +103,7 @@ body {
 
 .letter-window.open {
     transform: scale(1);
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 h1 {
